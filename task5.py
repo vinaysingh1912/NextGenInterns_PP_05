@@ -1,15 +1,15 @@
 class Task:
-    def _init_(self, title):
+    def __init__(self, title):
         self.title = title
         self.completed = False
 
-    def _str_(self):
+    def __str__(self):
         status = "✔" if self.completed else "❌"
         return f"{status} {self.title}"
 
 
 class TodoList:
-    def _init_(self):
+    def __init__(self):
         self.tasks = []
 
     def add_task(self, title):
